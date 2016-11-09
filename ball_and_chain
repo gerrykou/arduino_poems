@@ -1,6 +1,6 @@
 /* Arduino Tutorial: Learn how to use an LCD 16x2 screen
    More info: http://www.ardumotive.com/how-to-use-an-lcd-dislpay-en.html  */
-
+//i used the connection as you find from the link
 //Include LCD library
 #include <LiquidCrystal.h>
 
