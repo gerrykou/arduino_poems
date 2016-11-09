@@ -1,0 +1,154 @@
+/* Arduino Tutorial: Learn how to use an LCD 16x2 screen
+   More info: http://www.ardumotive.com/how-to-use-an-lcd-dislpay-en.html  */
+
+//Include LCD library
+#include <LiquidCrystal.h>
+
+// initialize the library with the numbers of the interface pins
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+void setup() {
+  // set up the LCD's number of columns and rows: 
+  lcd.begin(16, 2);
+  
+}
+
+void loop() {
+	// Print a message to the LCD.
+   lcd.setCursor(0, 0);
+  lcd.print("ball & chain");
+    lcd.setCursor(0, 1);
+  lcd.print("Reagan Butcher");
+  
+  // set the cursor to column 0, line 1
+  // (note: line 1 is the second row, since counting begins with 0):
+  //--------------------------------------------------------------------------
+  delay(4000);
+  lcd.setCursor(0, 0);
+   lcd.print("a few old   ");
+  lcd.setCursor(0, 1);
+  //Print a message to second line of LCD
+  lcd.print("girlfriends   ");
+delay(2000);
+lcd.clear();
+//--------------------------------------------------------------------------
+lcd.setCursor(0, 0);
+lcd.print("write to me");
+lcd.setCursor(0, 1);
+lcd.print("in prison");
+delay(2000);
+
+lcd.clear();
+
+
+//--------------------------------------------------------------------------
+lcd.setCursor(0, 0);
+lcd.print("it is nice");
+lcd.setCursor(0, 1);
+lcd.print("they all have");
+delay(2000);
+
+lcd.clear();
+
+//--------------------------------------------------------------------------
+lcd.setCursor(0, 0);
+lcd.print("boyfriends,");
+lcd.setCursor(0, 1);
+lcd.print("husbands,");
+delay(2000);
+
+lcd.clear();
+
+//--------------------------------------------------------------------------
+lcd.setCursor(0, 0);
+lcd.print("children");
+lcd.setCursor(0, 1);
+lcd.print("and good jobs");
+delay(2000);
+
+lcd.clear();
+
+//--------------------------------------------------------------------------
+lcd.setCursor(0, 0);
+lcd.print("i have concrete");
+lcd.setCursor(0, 1);
+lcd.print("and razor wire,");
+delay(2000);
+
+lcd.clear();
+
+//--------------------------------------------------------------------------
+lcd.setCursor(0, 0);
+lcd.print("steel doors and");
+lcd.setCursor(0, 1);
+lcd.print("psychopathic ");
+delay(2000);
+
+lcd.clear();
+
+//--------------------------------------------------------------------------
+lcd.setCursor(0, 0);
+lcd.print("neighbors");
+lcd.setCursor(0, 1);
+lcd.print("but i dont think");
+delay(2000);
+
+lcd.clear();
+
+//--------------------------------------------------------------------------
+lcd.setCursor(0, 0);
+lcd.print("i d trade places");
+lcd.setCursor(0, 1);
+lcd.print("with them");
+delay(2000);
+
+lcd.clear();
+
+//--------------------------------------------------------------------------
+lcd.setCursor(0, 0);
+lcd.print("because in a ");
+lcd.setCursor(0, 1);
+lcd.print("few more years");
+delay(2000);
+
+lcd.clear();
+
+//--------------------------------------------------------------------------
+lcd.setCursor(0, 0);
+lcd.print("i will be free");
+lcd.setCursor(0, 1);
+lcd.print("and it seems ");
+delay(2000);
+
+lcd.clear();
+
+//--------------------------------------------------------------------------
+lcd.setCursor(0, 0);
+lcd.print("that");
+lcd.setCursor(0, 1);
+lcd.print("they never will be");
+
+delay(12000);
+
+lcd.clear();
+
+//--------------------------------------------------------------------------
+
+//012345678901234567
+
+//ball & chain
+
+//a few old girlfriends write to me in prison
+//it’s nice
+//they all have boyfriends, husbands, children
+//and good jobs
+//i have concrete and razor-wire, steel doors
+//and psychopathic neighbors
+//but i don’t think
+//i’d trade places with them
+//because in a few more years
+//i will be free
+//and it seems that they
+//never will be
+
+}
